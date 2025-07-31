@@ -92,8 +92,8 @@ CHAT_ID = 'your-chat-id'
 
 # Respect the Hacker Ethic
 
-> Hack to learn.
-> Never hack to harm.
+> Hack to learn.  
+> Never hack to harm.  
 > Always ask permission before testing others' systems.
 
   
