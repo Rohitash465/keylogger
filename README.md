@@ -30,7 +30,7 @@ Install required Python packages:
 pip install pynput requests
 ```
 
-How to Set Up the Telegram Bot
+# How to Set Up the Telegram Bot
 
 Follow these exact steps to create your Telegram bot and connect it with the keylogger.
 
@@ -91,6 +91,7 @@ CHAT_ID = 'your-chat-id'
 ---
 
 # Respect the Hacker Ethic
+
 > Hack to learn.
 > Never hack to harm.
 > Always ask permission before testing others' systems.
